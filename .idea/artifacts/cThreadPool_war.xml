@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cThreadPool:war">
+    <output-path>$PROJECT_DIR$/../cThreadPool/target</output-path>
+    <root id="archive" name="cThreadPool.war">
+      <element id="artifact" artifact-name="cThreadPool:war exploded" />
+    </root>
+  </artifact>
+</component>
