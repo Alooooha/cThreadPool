@@ -84,6 +84,15 @@
 <br>drainQueue():清空workQueue，并得到队列任务
 <br>
 
+<br>10、boolean awiatTermination(long timeout, TimeUnit unit):
+-
+*描述：阻塞，直到线程池退出，可设置等待时间。*
+<br>因为shutdown()、shutdownNow()方法不会主动等待执行任务的结束，有时候主线程调用
+<br>shutdown后，代码执行结束，主线程关闭。而线程池还在等待任务执行完毕（豆瓣爬虫项
+<br>目就有这个情况）,这时候我们就可以使用awaitTermination()来等待线程池结束，再由
+<br>主线程结束整个程序。
+<br>
+
 <br>ThreadPoolExecutor():
 -
 *描述：构造方法*
